@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brew Home — Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=120&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d8f0a8b7a7f" alt="Brew Home" class="brand-logo">
+        <div class="brand-text">
+          <h1>Brew Home</h1>
+          <small>Classic • Retro • Aesthetic</small>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container checkout">
+    <section class="checkout-left">
+      <h2>Checkout</h2>
+      <p class="muted">Fill in your details. This is a simulated payment — no actual processing occurs.</p>
+
+      <form id="checkout-form" class="checkout-form">
+        <label>
+          Full Name
+          <input type="text" name="fullname" id="fullname" required placeholder="Your full name">
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" id="phone" required placeholder="+91 9XXXXXXXXX">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Address
+          <textarea name="address" id="address" required placeholder="Street, City, State, PIN"></textarea>
+        </label>
+
+        <fieldset class="payment-sim">
+          <legend>Payment (Simulated)</legend>
+          <label>
+            Cardholder Name
+            <input type="text" id="card-name" placeholder="Name on card" required>
+          </label>
+          <label>
+            Card Number
+            <input type="text" id="card-number" placeholder="4111 1111 1111 1111" required maxlength="19">
+          </label>
+          <div class="card-row">
+            <label>
+              Expiry
+              <input type="text" id="card-exp" placeholder="MM/YY" required maxlength="5">
+            </label>
+            <label>
+              CVV
+              <input type="text" id="card-cvv" placeholder="123" required maxlength="4">
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="checkout-actions">
+          <button type="submit" class="btn btn-primary">Pay Now</button>
+          <a href="cart.html" class="btn btn-outline">Back to Cart</a>
+        </div>
+      </form>
+    </section>
+
+    <aside class="checkout-right">
+      <h3>Order Summary</h3>
+      <div id="checkout-summary"></div>
+      <div class="summary-row">
+        <span>Delivery</span>
+        <span id="checkout-delivery">₹ 30</span>
+      </div>
+      <div class="summary-row total">
+        <strong>Total</strong>
+        <strong id="checkout-total">₹ 0</strong>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Brew Home</h4>
+        <p class="muted">Vintage flavors. Modern craft.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+        </nav>
+      </div>
+    </div>
+    <div class="legal container">
+      <small>© <span id="year4"></span> Brew Home</small>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
