@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brew Home — Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=120&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d8f0a8b7a7f" alt="Brew Home" class="brand-logo">
+        <div class="brand-text">
+          <h1>Brew Home</h1>
+          <small>Classic • Retro • Aesthetic</small>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="cart.html">Cart <span id="nav-cart-count-2" class="pill">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-top">
+      <h2>All Products</h2>
+      <p class="muted">Classic coffees and tasty retro desserts. Click a product to learn more or add to cart.</p>
+    </section>
+
+    <section class="products-grid" id="products-grid">
+      <!-- We'll include a detailed list of products. Use the same IDs as main.js expects. -->
+      <!-- Coffee items -->
+      <article class="card product-card" data-category="coffee">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d8f0a8b7a7f" alt="Cappuccino">
+        <div class="card-body">
+          <h3>Cappuccino</h3>
+          <p class="muted">Warm, frothy espresso classic</p>
+          <div class="product-meta">
+            <span class="price">₹ 220</span>
+            <div class="actions">
+              <button class="btn add-btn" data-id="cappuccino" data-title="Cappuccino" data-price="220" data-image="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d8f0a8b7a7f">Add to Cart</button>
+              <a href="payments.html?product=cappuccino" class="btn btn-outline">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product-card" data-category="coffee">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a2f1c1d6c07" alt="Cold Brew">
+        <div class="card-body">
+          <h3>Cold Brew</h3>
+          <p class="muted">Slow brewed for silky taste</p>
+          <div class="product-meta">
+            <span class="price">₹ 180</span>
+            <div class="actions">
+              <button class="btn add-btn" data-id="coldbrew" data-title="Cold Brew" data-price="180" data-image="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a2f1c1d6c07">Add to Cart</button>
+              <a href="payments.html?product=coldbrew" class="btn btn-outline">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product-card" data-category="instant">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=79929d7b8a3a" alt="Instant Coffee">
+        <div class="card-body">
+          <h3>Retro Instant</h3>
+          <p class="muted">Quick, aromatic, satisfying</p>
+          <div class="product-meta">
+            <span class="price">₹ 120</span>
+            <div class="actions">
+              <button class="btn add-btn" data-id="instant" data-title="Retro Instant" data-price="120" data-image="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=79929d7b8a3a">Add to Cart</button>
+              <a href="payments.html?product=instant" class="btn btn-outline">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Desserts -->
+      <article class="card product-card" data-category="dessert">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=6d4a7b058d0f" alt="Cheesecake">
+        <div class="card-body">
+          <h3>Classic Cheesecake</h3>
+          <p class="muted">Silky, tangy, nostalgic</p>
+          <div class="product-meta">
+            <span class="price">₹ 260</span>
+            <div class="actions">
+              <button class="btn add-btn" data-id="cheesecake" data-title="Classic Cheesecake" data-price="260" data-image="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=6d4a7b058d0f">Add to Cart</button>
+              <a href="payments.html?product=cheesecake" class="btn btn-outline">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product-card" data-category="dessert">
+        <img src="https://images.unsplash.com/photo-1527515637463-2b1b6b2f2f9e?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=9a1c40e3b8a1" alt="Brownie">
+        <div class="card-body">
+          <h3>Retro Brownie</h3>
+          <p class="muted">Fudgy and rich</p>
+          <div class="product-meta">
+            <span class="price">₹ 140</span>
+            <div class="actions">
+              <button class="btn add-btn" data-id="brownie" data-title="Retro Brownie" data-price="140" data-image="https://images.unsplash.com/photo-1527515637463-2b1b6b2f2f9e?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=9a1c40e3b8a1">Add to Cart</button>
+              <a href="payments.html?product=brownie" class="btn btn-outline">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="products-actions">
+      <a href="cart.html" class="btn btn-primary">View Cart</a>
+      <a href="index.html" class="btn btn-outline">Back to Home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Brew Home</h4>
+        <p class="muted">Vintage flavors. Modern craft.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p class="muted small">contact@brewhome.example</p>
+      </div>
+    </div>
+    <div class="legal container">
+      <small>© <span id="year2"></span> Brew Home</small>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
